@@ -55,3 +55,12 @@ export const deleteNote = async (id: number): Promise<Note> => {
 
   return res.data;
 };
+
+export const getSingleNote = async (id: string) => {
+  const res = await axios.get<Note>(`/notes/${id}`, {
+     headers: {
+      Authorization: `Bearer ${myToken}`,
+    },
+  })
+  return res.data
+}

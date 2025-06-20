@@ -75,4 +75,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+.no-underline { text-decoration: none; }
+  
   
