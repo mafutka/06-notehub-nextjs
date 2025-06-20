@@ -2,12 +2,12 @@
 
 import { useState } from 'react';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
-import { fetchNotes } from '../../lib/api';
-import SearchBox from '../../components/SearchBox/SearchBox';
-import NoteList from '../../components/NoteList/NoteList';
-import Pagination from '../../components/Pagination/Pagination';
-import { NoteModal } from '../../components/NoteModal/NoteModal';
-import type { FetchNotesResponse } from '../../lib/api';
+import { fetchNotes } from '../lib/api';
+import SearchBox from '../components/SearchBox/SearchBox';
+import NoteList from '../components/NoteList/NoteList';
+import Pagination from '../components/Pagination/Pagination';
+import { NoteModal } from '../components/NoteModal/NoteModal';
+import type { FetchNotesResponse } from '../lib/api';
 import { useDebounce } from 'use-debounce';
 import css from './page.module.css';
 
