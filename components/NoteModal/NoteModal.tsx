@@ -5,7 +5,6 @@ import { NoteForm } from '../NoteForm/NoteForm';
 
 interface NoteModalProps {
   onClose: () => void;
-  onSuccess: () => void;
 }
 
 export const NoteModal: React.FC<NoteModalProps> = ({ onClose }) => {
